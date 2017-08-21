@@ -32,8 +32,13 @@ function BasicAutocomplete({
         inputValue,
         highlightedIndex,
       }) =>
-        <div className="autocomplete-widget">
-          <div className="autocomplete-widget__input">
+        <div
+          className={composeClassName(
+            'autocomplete-widget',
+            isOpen ? 'is-open' : null
+          )}
+        >
+          <div className="autocomplete-widget__input-wrapper">
             <input
               {...getInputProps({
                 ...inputProps,
@@ -44,23 +49,23 @@ function BasicAutocomplete({
               })}
             />
             {selectedItem
-              ? <div
-                  className="autocomplete-widget__x-icon-wrapper"
+              ? <button
+                  className="autocomplete-widget__x-icon-button"
                   onClick={clearSelection}
                   aria-label="clear selection"
                 >
                   <XIcon className="autocomplete-widget__x-icon" />
-                </div>
-              : <div
+                </button>
+              : <button
                   {...getButtonProps({
-                    className: 'autocomplete-widget__arrow-icon-wrapper',
+                    className: 'autocomplete-widget__arrow-icon-button',
                   })}
                 >
                   <ArrowIcon
                     isOpen={isOpen}
                     className="autocomplete-widget__arrow-icon"
                   />
-                </div>}
+                </button>}
           </div>
           {!isOpen
             ? null

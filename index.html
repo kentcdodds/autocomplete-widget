@@ -1,405 +1,231 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>autocomplete widget</title>
-    <style>
-      .autocomplete-widget__item--selected {
-        font-weight: bold;
-      }
-      .autocomplete-widget__item--highlighted {
-        background-color: lightgray;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>This is an autocomplete widget</h1>
-    <div>
-      <autocomplete-widget>
-        <script type="text/props">
-          {
-            "itemIdProp": "id",
-            "itemDisplayProp": "name",
-            "inputProps": {},
-            "items": [
-  {
-    "name": "4-LOM",
-    "id": "4-lom"
-  },
-  {
-    "name": "Aayla Secura",
-    "id": "aayla secura"
-  },
-  {
-    "name": "Admiral Ackbar",
-    "id": "admiral ackbar"
-  },
-  {
-    "name": "Admiral Thrawn",
-    "id": "admiral thrawn"
-  },
-  {
-    "name": "Ahsoka Tano",
-    "id": "ahsoka tano"
-  },
-  {
-    "name": "Anakin Solo",
-    "id": "anakin solo"
-  },
-  {
-    "name": "Asajj Ventress",
-    "id": "asajj ventress"
-  },
-  {
-    "name": "Aurra Sing",
-    "id": "aurra sing"
-  },
-  {
-    "name": "Senator Bail Organa",
-    "id": "senator bail organa"
-  },
-  {
-    "name": "Barriss Offee",
-    "id": "barriss offee"
-  },
-  {
-    "name": "Bastila Shan",
-    "id": "bastila shan"
-  },
-  {
-    "name": "Ben Skywalker",
-    "id": "ben skywalker"
-  },
-  {
-    "name": "Bib Fortuna",
-    "id": "bib fortuna"
-  },
-  {
-    "name": "Biggs Darklighter",
-    "id": "biggs darklighter"
-  },
-  {
-    "name": "Boba Fett",
-    "id": "boba fett"
-  },
-  {
-    "name": "Bossk",
-    "id": "bossk"
-  },
-  {
-    "name": "Brakiss",
-    "id": "brakiss"
-  },
-  {
-    "name": "C-3PO",
-    "id": "c-3po"
-  },
-  {
-    "name": "Cad Bane",
-    "id": "cad bane"
-  },
-  {
-    "name": "Cade Skywalker",
-    "id": "cade skywalker"
-  },
-  {
-    "name": "Callista Ming",
-    "id": "callista ming"
-  },
-  {
-    "name": "Captain Rex",
-    "id": "captain rex"
-  },
-  {
-    "name": "Carnor Jax",
-    "id": "carnor jax"
-  },
-  {
-    "name": "Chewbacca",
-    "id": "chewbacca"
-  },
-  {
-    "name": "Clone Commander Cody",
-    "id": "clone commander cody"
-  },
-  {
-    "name": "Count Dooku",
-    "id": "count dooku"
-  },
-  {
-    "name": "Darth Bane",
-    "id": "darth bane"
-  },
-  {
-    "name": "Darth Krayt",
-    "id": "darth krayt"
-  },
-  {
-    "name": "Darth Maul",
-    "id": "darth maul"
-  },
-  {
-    "name": "Darth Nihilus",
-    "id": "darth nihilus"
-  },
-  {
-    "name": "Darth Vader",
-    "id": "darth vader"
-  },
-  {
-    "name": "Dash Rendar",
-    "id": "dash rendar"
-  },
-  {
-    "name": "Dengar",
-    "id": "dengar"
-  },
-  {
-    "name": "Durge",
-    "id": "durge"
-  },
-  {
-    "name": "Emperor Palpatine",
-    "id": "emperor palpatine"
-  },
-  {
-    "name": "Exar Kun",
-    "id": "exar kun"
-  },
-  {
-    "name": "Galen Marek",
-    "id": "galen marek"
-  },
-  {
-    "name": "General Crix Madine",
-    "id": "general crix madine"
-  },
-  {
-    "name": "General Dodonna",
-    "id": "general dodonna"
-  },
-  {
-    "name": "General Grievous",
-    "id": "general grievous"
-  },
-  {
-    "name": "General Veers",
-    "id": "general veers"
-  },
-  {
-    "name": "Gilad Pellaeon",
-    "id": "gilad pellaeon"
-  },
-  {
-    "name": "Grand Moff Tarkin",
-    "id": "grand moff tarkin"
-  },
-  {
-    "name": "Greedo",
-    "id": "greedo"
-  },
-  {
-    "name": "Han Solo",
-    "id": "han solo"
-  },
-  {
-    "name": "IG 88",
-    "id": "ig 88"
-  },
-  {
-    "name": "Jabba The Hutt",
-    "id": "jabba the hutt"
-  },
-  {
-    "name": "Jacen Solo",
-    "id": "jacen solo"
-  },
-  {
-    "name": "Jaina Solo",
-    "id": "jaina solo"
-  },
-  {
-    "name": "Jango Fett",
-    "id": "jango fett"
-  },
-  {
-    "name": "Jarael",
-    "id": "jarael"
-  },
-  {
-    "name": "Jerec",
-    "id": "jerec"
-  },
-  {
-    "name": "Joruus C'Baoth",
-    "id": "joruus c'baoth"
-  },
-  {
-    "name": "Ki-Adi-Mundi",
-    "id": "ki-adi-mundi"
-  },
-  {
-    "name": "Kir Kanos",
-    "id": "kir kanos"
-  },
-  {
-    "name": "Kit Fisto",
-    "id": "kit fisto"
-  },
-  {
-    "name": "Kyle Katarn",
-    "id": "kyle katarn"
-  },
-  {
-    "name": "Kyp Durron",
-    "id": "kyp durron"
-  },
-  {
-    "name": "Lando Calrissian",
-    "id": "lando calrissian"
-  },
-  {
-    "name": "Luke Skywalker",
-    "id": "luke skywalker"
-  },
-  {
-    "name": "Luminara Unduli",
-    "id": "luminara unduli"
-  },
-  {
-    "name": "Lumiya",
-    "id": "lumiya"
-  },
-  {
-    "name": "Mace Windu",
-    "id": "mace windu"
-  },
-  {
-    "name": "Mara Jade",
-    "id": "mara jade"
-  },
-  {
-    "name": "Mission Vao",
-    "id": "mission vao"
-  },
-  {
-    "name": "Natasi Daala",
-    "id": "natasi daala"
-  },
-  {
-    "name": "Nom Anor",
-    "id": "nom anor"
-  },
-  {
-    "name": "Obi-Wan Kenobi",
-    "id": "obi-wan kenobi"
-  },
-  {
-    "name": "Padmé Amidala",
-    "id": "padmé amidala"
-  },
-  {
-    "name": "Plo Koon",
-    "id": "plo koon"
-  },
-  {
-    "name": "Pre Vizsla",
-    "id": "pre vizsla"
-  },
-  {
-    "name": "Prince Xizor",
-    "id": "prince xizor"
-  },
-  {
-    "name": "Princess Leia",
-    "id": "princess leia"
-  },
-  {
-    "name": "PROXY",
-    "id": "proxy"
-  },
-  {
-    "name": "Qui-Gon Jinn",
-    "id": "qui-gon jinn"
-  },
-  {
-    "name": "Quinlan Vos",
-    "id": "quinlan vos"
-  },
-  {
-    "name": "R2-D2",
-    "id": "r2-d2"
-  },
-  {
-    "name": "Rahm Kota",
-    "id": "rahm kota"
-  },
-  {
-    "name": "Revan",
-    "id": "revan"
-  },
-  {
-    "name": "Satele Shan",
-    "id": "satele shan"
-  },
-  {
-    "name": "Savage Opress",
-    "id": "savage opress"
-  },
-  {
-    "name": "Sebulba",
-    "id": "sebulba"
-  },
-  {
-    "name": "Shaak Ti",
-    "id": "shaak ti"
-  },
-  {
-    "name": "Shmi Skywalker",
-    "id": "shmi skywalker"
-  },
-  {
-    "name": "Talon Karrde",
-    "id": "talon karrde"
-  },
-  {
-    "name": "Ulic Qel-Droma",
-    "id": "ulic qel-droma"
-  },
-  {
-    "name": "Visas Marr",
-    "id": "visas marr"
-  },
-  {
-    "name": "Watto",
-    "id": "watto"
-  },
-  {
-    "name": "Wedge Antilles",
-    "id": "wedge antilles"
-  },
-  {
-    "name": "Yoda",
-    "id": "yoda"
-  },
-  {
-    "name": "Zam Wesell",
-    "id": "zam wesell"
-  },
-  {
-    "name": "Zayne Carrick",
-    "id": "zayne carrick"
-  },
-  {
-    "name": "Zuckuss",
-    "id": "zuckuss"
+<head>
+  <meta charset="utf-8">
+  <title>autocomplete widget</title>
+  <style>
+  .root {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
   }
-]
-          }
-        </script>
-      </autocomplete-widget>
+  .autocomplete-widget {
+    width: 250px;
+    margin: auto;
+  }
+  .autocomplete-widget__input-wrapper {
+    position: relative;
+    padding-right: 1.75em;
+  }
+  .autocomplete-widget__input {
+    width: calc(100% - 16px);
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 1em;
+    outline: 0;
+    white-space: normal;
+    min-height: 2em;
+    background: #fff;
+    display: inline-block;
+    padding: .5em 2em .5em 1em;
+    color: rgba(0,0,0,.87);
+    box-shadow: none;
+    border: 1px solid rgba(34,36,38,.15);
+    border-radius: .30rem;
+    transition: box-shadow .1s ease,width .1s ease;
+    -webkit-transition: box-shadow .1s ease,width .1s ease;
+    -moz-transition: box-shadow .1s ease,width .1s ease;
+  }
+  .autocomplete-widget.is-open .autocomplete-widget__input {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .autocomplete-widget__x-icon-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    cursor: pointer;
+  }
+  .autocomplete-widget__x-icon {
+  }
+  .autocomplete-widget__arrow-icon-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    cursor: pointer;
+    padding-top: 4px;
+  }
+  .autocomplete-widget__arrow-icon {
+  }
+  .autocomplete-widget__menu {
+    max-height: 20rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-top-width: 0px;
+    outline: 0px;
+    border-radius: 0 0 .28571429rem .28571429rem;
+    transition: opacity .1s ease;
+    box-shadow: 0 2px 3px 0 rgba(34,36,38,.15);
+    border-color: #96c8da;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-style: solid;
+    -webkit-transition: opacity .1s ease;
+    -moz-transition: opacity .1s ease;
+  }
+  .autocomplete-widget__item {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    border: none;
+    height: auto;
+    text-align: left;
+    border-top: none;
+    line-height: 1em;
+    color: rgba(0,0,0,.87);
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+    box-shadow: none;
+    padding: .8rem 1.1rem;
+    white-space: normal;
+    word-wrap: normal;
+  }
+  .autocomplete-widget__item--selected {
+    font-weight: 700;
+  }
+  .autocomplete-widget__item--highlighted {
+    background: rgba(0,0,0,.03);
+  }
+  </style>
+</head>
+<body>
+  <h1>This is an autocomplete widget</h1>
+  <div class="root">
+    <autocomplete-widget>
+      <script type="text/props">
+      {
+        "itemIdProp": "id",
+        "itemDisplayProp": "name",
+        "inputProps": {
+          "placeholder": "Enter a Star Wars Name",
+          "autoFocus": true
+        },
+        "items": [
+          {"name": "4-LOM", "id": "4-lom"},
+          {"name": "Aayla Secura", "id": "aayla secura"},
+          {"name": "Admiral Ackbar", "id": "admiral ackbar"},
+          {"name": "Admiral Thrawn", "id": "admiral thrawn"},
+          {"name": "Ahsoka Tano", "id": "ahsoka tano"},
+          {"name": "Anakin Solo", "id": "anakin solo"},
+          {"name": "Asajj Ventress", "id": "asajj ventress"},
+          {"name": "Aurra Sing", "id": "aurra sing"},
+          {"name": "Senator Bail Organa", "id": "senator bail organa"},
+          {"name": "Barriss Offee", "id": "barriss offee"},
+          {"name": "Bastila Shan", "id": "bastila shan"},
+          {"name": "Ben Skywalker", "id": "ben skywalker"},
+          {"name": "Bib Fortuna", "id": "bib fortuna"},
+          {"name": "Biggs Darklighter", "id": "biggs darklighter"},
+          {"name": "Boba Fett", "id": "boba fett"},
+          {"name": "Bossk", "id": "bossk"},
+          {"name": "Brakiss", "id": "brakiss"},
+          {"name": "C-3PO", "id": "c-3po"},
+          {"name": "Cad Bane", "id": "cad bane"},
+          {"name": "Cade Skywalker", "id": "cade skywalker"},
+          {"name": "Callista Ming", "id": "callista ming"},
+          {"name": "Captain Rex", "id": "captain rex"},
+          {"name": "Carnor Jax", "id": "carnor jax"},
+          {"name": "Chewbacca", "id": "chewbacca"},
+          {"name": "Clone Commander Cody", "id": "clone commander cody"},
+          {"name": "Count Dooku", "id": "count dooku"},
+          {"name": "Darth Bane", "id": "darth bane"},
+          {"name": "Darth Krayt", "id": "darth krayt"},
+          {"name": "Darth Maul", "id": "darth maul"},
+          {"name": "Darth Nihilus", "id": "darth nihilus"},
+          {"name": "Darth Vader", "id": "darth vader"},
+          {"name": "Dash Rendar", "id": "dash rendar"},
+          {"name": "Dengar", "id": "dengar"},
+          {"name": "Durge", "id": "durge"},
+          {"name": "Emperor Palpatine", "id": "emperor palpatine"},
+          {"name": "Exar Kun", "id": "exar kun"},
+          {"name": "Galen Marek", "id": "galen marek"},
+          {"name": "General Crix Madine", "id": "general crix madine"},
+          {"name": "General Dodonna", "id": "general dodonna"},
+          {"name": "General Grievous", "id": "general grievous"},
+          {"name": "General Veers", "id": "general veers"},
+          {"name": "Gilad Pellaeon", "id": "gilad pellaeon"},
+          {"name": "Grand Moff Tarkin", "id": "grand moff tarkin"},
+          {"name": "Greedo", "id": "greedo"},
+          {"name": "Han Solo", "id": "han solo"},
+          {"name": "IG 88", "id": "ig 88"},
+          {"name": "Jabba The Hutt", "id": "jabba the hutt"},
+          {"name": "Jacen Solo", "id": "jacen solo"},
+          {"name": "Jaina Solo", "id": "jaina solo"},
+          {"name": "Jango Fett", "id": "jango fett"},
+          {"name": "Jarael", "id": "jarael"},
+          {"name": "Jerec", "id": "jerec"},
+          {"name": "Joruus C'Baoth", "id": "joruus c'baoth"},
+          {"name": "Ki-Adi-Mundi", "id": "ki-adi-mundi"},
+          {"name": "Kir Kanos", "id": "kir kanos"},
+          {"name": "Kit Fisto", "id": "kit fisto"},
+          {"name": "Kyle Katarn", "id": "kyle katarn"},
+          {"name": "Kyp Durron", "id": "kyp durron"},
+          {"name": "Lando Calrissian", "id": "lando calrissian"},
+          {"name": "Luke Skywalker", "id": "luke skywalker"},
+          {"name": "Luminara Unduli", "id": "luminara unduli"},
+          {"name": "Lumiya", "id": "lumiya"},
+          {"name": "Mace Windu", "id": "mace windu"},
+          {"name": "Mara Jade", "id": "mara jade"},
+          {"name": "Mission Vao", "id": "mission vao"},
+          {"name": "Natasi Daala", "id": "natasi daala"},
+          {"name": "Nom Anor", "id": "nom anor"},
+          {"name": "Obi-Wan Kenobi", "id": "obi-wan kenobi"},
+          {"name": "Padmé Amidala", "id": "padmé amidala"},
+          {"name": "Plo Koon", "id": "plo koon"},
+          {"name": "Pre Vizsla", "id": "pre vizsla"},
+          {"name": "Prince Xizor", "id": "prince xizor"},
+          {"name": "Princess Leia", "id": "princess leia"},
+          {"name": "PROXY", "id": "proxy"},
+          {"name": "Qui-Gon Jinn", "id": "qui-gon jinn"},
+          {"name": "Quinlan Vos", "id": "quinlan vos"},
+          {"name": "R2-D2", "id": "r2-d2"},
+          {"name": "Rahm Kota", "id": "rahm kota"},
+          {"name": "Revan", "id": "revan"},
+          {"name": "Satele Shan", "id": "satele shan"},
+          {"name": "Savage Opress", "id": "savage opress"},
+          {"name": "Sebulba", "id": "sebulba"},
+          {"name": "Shaak Ti", "id": "shaak ti"},
+          {"name": "Shmi Skywalker", "id": "shmi skywalker"},
+          {"name": "Talon Karrde", "id": "talon karrde"},
+          {"name": "Ulic Qel-Droma", "id": "ulic qel-droma"},
+          {"name": "Visas Marr", "id": "visas marr"},
+          {"name": "Watto", "id": "watto"},
+          {"name": "Wedge Antilles", "id": "wedge antilles"},
+          {"name": "Yoda", "id": "yoda"},
+          {"name": "Zam Wesell", "id": "zam wesell"},
+          {"name": "Zayne Carrick", "id": "zayne carrick"},
+          {"name": "Zuckuss", "id": "zuckuss"}
+        ]
+      }
+      </script>
+    </autocomplete-widget>
 
-<script async src="dist/autocomplete-widget.umd.js" data-mount-in="autocomplete-widget"></script>
-    </div>
-  </body>
+    <script async src="dist/autocomplete-widget.umd.js" data-mount-in="autocomplete-widget"></script>
+  </div>
+</body>
 </html>
