@@ -19,6 +19,10 @@
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
   }
+  .label {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
   .autocomplete-widget {
     width: 250px;
     margin: auto;
@@ -117,13 +121,16 @@
 <body>
   <h1>This is an autocomplete widget</h1>
   <div class="root">
+    <label for="sw-autocomplete" class="label">
+      Enter the name of a Star Wars Character
+    </label>
     <autocomplete-widget>
       <script type="text/props">
       {
         "itemIdProp": "id",
         "itemDisplayProp": "name",
         "inputProps": {
-          "placeholder": "Enter a Star Wars Name",
+          "id": "sw-autocomplete",
           "autoFocus": true
         },
         "items": [
